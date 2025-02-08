@@ -59,7 +59,15 @@
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^1.1.2",
-    "zod": "^3.24.1"
+    "zod": "^3.24.1",
+    "react-markdown": "latest",
+    "react-syntax-highlighter": "latest",
+    "unified": "latest",
+    "remark-parse": "latest",
+    "remark-rehype": "latest",
+    "rehype-stringify": "latest",
+    "remark-stringify": "latest",
+    "remark-gfm": "latest"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250204.0",

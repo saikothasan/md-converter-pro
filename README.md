@@ -1,8 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MD Converter Pro
+
+A professional Markdown converter built with Next.js that transforms Markdown into various formats including HTML, TXT, and JSON.
+
+Live Demo: [MD Converter Pro](https://md-converter-pro.pages.dev/)
+Repository: [GitHub](https://github.com/saikothasan/md-converter-pro)
+
+## Features
+
+- 🚀 Lightning-fast Markdown conversion
+- 💻 Multiple output formats (HTML, TXT, JSON)
+- 🎨 Beautiful syntax highlighting
+- 👁️ Live preview mode
+- 🌓 Dark/Light theme support
+- 📱 Fully responsive design
+- ⚡ Edge Runtime for optimal performance
+- 💾 Download converted content
+- 🔒 Client-side conversion for privacy
+
+## Technologies Used
+
+- Next.js 13+ with App Router
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- Unified.js ecosystem (remark, rehype)
+- Edge Runtime
+- React Markdown
+- Syntax Highlighter
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository:
+
+```bash
+git clone https://github.com/saikothasan/md-converter-pro.git
+cd md-converter-pro
+```
+
+Install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +55,60 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Enter or paste your Markdown content in the input area
+2. Select your desired output format (HTML, TXT, JSON)
+3. Click "Convert" to transform your Markdown
+4. Use the preview/raw tabs to view the output
+5. Click "Download" to save the converted content
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+md-converter-pro/
+├── app/
+│   ├── api/
+│   │   └── convert/
+│   │       └── route.ts
+│   ├── about/
+│   │   └── page.tsx
+│   ├── features/
+│   │   └── page.tsx
+│   ├── faq/
+│   │   └── page.tsx
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── converter-section.tsx
+│   ├── navbar.tsx
+│   ├── footer.tsx
+│   └── theme-provider.tsx
+└── public/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Support
+
+Join our Telegram channel for support and updates: [https://t.me/drkingbd](https://t.me/drkingbd)
+
+## Author
+
+- [@saikothasan](https://github.com/saikothasan)
+
+## Acknowledgments
+
+- Thanks to the Next.js team for the amazing framework
+- Thanks to the shadcn/ui team for the beautiful components
+- Thanks to the Unified.js team for the Markdown processing tools

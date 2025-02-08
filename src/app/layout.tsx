@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Markdown Converter Pro",
   description: "Professional Markdown conversion tool for developers and writers",
   keywords: ["markdown", "converter", "html", "json", "professional", "developers", "writers"],
-  authors: [{ name: "Your Company Name" }],
+  authors: [{ name: "Saikothasan" }],
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "Markdown Converter Pro",
     images: [
       {
-        url: "https://md-converter-pro.pages.dev/",
+        url: "https://md-converter-pro.pages.dev/down-right-arrow_10067883.png",
         width: 1200,
         height: 630,
         alt: "Markdown Converter Pro",

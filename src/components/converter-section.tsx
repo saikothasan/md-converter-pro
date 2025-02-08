@@ -13,10 +13,12 @@ import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism"
 import { toast } from "@/hooks/use-toast"
 import { Download, RefreshCw } from "lucide-react"
 
+type ConversionFormat = "html" | "txt" | "md" | "json"
+
 export default function ConverterSection() {
   const [markdown, setMarkdown] = useState("")
   const [convertedContent, setConvertedContent] = useState("")
-  const [format, setFormat] = useState("html")
+  const [format, setFormat] = useState<ConversionFormat>("html")
   const [isLoading, setIsLoading] = useState(false)
 
   const handleConvert = async () => {
@@ -118,7 +120,7 @@ export default function ConverterSection() {
       </Card>
 
       <div className="md:col-span-2 flex items-center space-x-4 mt-4">
-        <Select value={format} onValueChange={setFormat}>
+        <Select value={format} onValueChange={(value: ConversionFormat) => setFormat(value)}>
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder="Select format" />
           </SelectTrigger>

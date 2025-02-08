@@ -45,7 +45,7 @@ export default function ConverterSection() {
         throw new Error("Conversion failed")
       }
 
-      const data = await response.json()
+      const data: { convertedContent: string } = await response.json()
       setConvertedContent(data.convertedContent)
       toast({
         title: "Success",

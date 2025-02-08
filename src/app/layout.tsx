@@ -17,11 +17,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://markdownconverterpro.com",
+    url: "https://md-converter-pro.pages.dev",
     siteName: "Markdown Converter Pro",
     images: [
       {
-        url: "https://markdownconverterpro.com/og-image.jpg",
+        url: "https://md-converter-pro.pages.dev/",
         width: 1200,
         height: 630,
         alt: "Markdown Converter Pro",

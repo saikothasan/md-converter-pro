@@ -6,8 +6,20 @@ import rehypeStringify from "rehype-stringify"
 import remarkStringify from "remark-stringify"
 import remarkGfm from "remark-gfm"
 
+export const runtime = "edge"
+
+type RequestBody = {
+  markdown: string
+  format: string
+}
+
+type ConversionResponse = {
+  convertedContent: string
+}
+
 export async function POST(request: Request) {
-  const { markdown, format } = await request.json()
+  const body: RequestBody = await request.json()
+  const { markdown, format } = body
 
   let convertedContent = ""
 
@@ -40,7 +52,7 @@ export async function POST(request: Request) {
         throw new Error("Unsupported format")
     }
 
-    return NextResponse.json({ convertedContent })
+    return NextResponse.json({ convertedContent } as ConversionResponse)
   } catch (error) {
     console.error("Conversion error:", error)
     return NextResponse.json({ error: "Conversion failed" }, { status: 500 })

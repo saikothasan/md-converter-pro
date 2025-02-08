@@ -33,7 +33,12 @@ export const metadata: Metadata = {
     site: "@mdconverterpro",
     creator: "@mdconverterpro",
   },
+  other: {
+    "google-site-verification": "KEFnhFSHJewJRRzfWnTjsmHd4hkOV1_2_KF4SoGwaBY", // Replace with your actual verification code
+  },
 }
+
+
 
 export default function RootLayout({
   children,

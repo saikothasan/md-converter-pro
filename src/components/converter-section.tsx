@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label"
 import ReactMarkdown from "react-markdown"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism"
-import { toast } from "@/components/ui/use-toast"
+import { toast } from "@/hooks/use-toast"
 import { Download, RefreshCw } from "lucide-react"
 
 export default function ConverterSection() {
